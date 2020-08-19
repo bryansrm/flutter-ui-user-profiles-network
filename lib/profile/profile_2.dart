@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_social_user_profiles/profile/profile_3.dart';
 
 class Profile2 extends StatelessWidget {
   @override
@@ -11,10 +12,18 @@ class Profile2 extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        leading: Icon(
-          Icons.menu,
-          color: Colors.white,
-          size: 24,
+        leading: GestureDetector(
+          onTap: (){
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Profile3())
+            );
+          },
+          child: Icon(
+            Icons.menu,
+            color: Colors.white,
+            size: 24,
+          ),
         ),
         title: Text(
           'Profile',

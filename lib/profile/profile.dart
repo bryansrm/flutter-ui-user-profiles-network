@@ -31,140 +31,142 @@ class _ProfileState extends State<Profile> {
                       fit: BoxFit.cover
                     )
                   ),
-                  child: Column(
-                    children: [
+                  child: SafeArea(
+                    child: Column(
+                      children: [
 
-                      SizedBox(height: 35.0),
+                        SizedBox(height: 10.0),
 
-                      CircleAvatar(
-                        radius: 50,
-                        backgroundImage: AssetImage('assets/images/friends_4.jpg'),
-                      ),
-
-                      SizedBox(height: 16.0),
-
-                      Text(
-                        'Bryan Rodriguez',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 22
+                        CircleAvatar(
+                          radius: 50,
+                          backgroundImage: AssetImage('assets/images/friends_4.jpg'),
                         ),
-                      ),
 
-                      SizedBox(height: 4.0),
+                        SizedBox(height: 16.0),
 
-                      Text(
-                        'Flutter Developer',
-                        style: TextStyle(
-                          color: Colors.white70,
-                          fontSize: 14
+                        Text(
+                          'Bryan Rodriguez',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 22
+                          ),
                         ),
-                      ),
 
-                      Expanded(
-                        child: Container(),
-                      ),
+                        SizedBox(height: 4.0),
 
-                      Container(
-                        height: 65,
-                        color: Colors.black.withOpacity(.4),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: [
-
-                            Container(
-                              width: 110,
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-
-                                  Text(
-                                    'FRIENDS',
-                                    style: TextStyle(
-                                      color: Colors.white70,
-                                      fontSize: 12
-                                    ),
-                                  ),
-
-                                  SizedBox(height: 4.0),
-
-                                  Text(
-                                    '2307',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.bold
-                                    ),
-                                  ),
-
-                                ],
-                              ),
-                            ),
-
-                            Container(
-                              width: 110,
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-
-                                  Text(
-                                    'FOLLOWING',
-                                    style: TextStyle(
-                                      color: Colors.white70,
-                                      fontSize: 12
-                                    ),
-                                  ),
-
-                                  SizedBox(height: 4.0),
-
-                                  Text(
-                                    '362',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.bold
-                                    ),
-                                  ),
-
-                                ],
-                              ),
-                            ),
-
-                            Container(
-                              width: 110,
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-
-                                  Text(
-                                    'FOLLOWERS',
-                                    style: TextStyle(
-                                      color: Colors.white70,
-                                      fontSize: 12
-                                    ),
-                                  ),
-
-                                  SizedBox(height: 4.0),
-
-                                  Text(
-                                    '100',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.bold
-                                    ),
-                                  ),
-
-                                ],
-                              ),
-                            ),
-
-                          ],
+                        Text(
+                          'Flutter Developer',
+                          style: TextStyle(
+                            color: Colors.white70,
+                            fontSize: 14
+                          ),
                         ),
-                      )
 
-                    ],
+                        Expanded(
+                          child: Container(),
+                        ),
+
+                        Container(
+                          height: 65,
+                          color: Colors.black.withOpacity(.4),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+
+                              Container(
+                                width: 110,
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+
+                                    Text(
+                                      'FRIENDS',
+                                      style: TextStyle(
+                                        color: Colors.white70,
+                                        fontSize: 12
+                                      ),
+                                    ),
+
+                                    SizedBox(height: 4.0),
+
+                                    Text(
+                                      '2307',
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold
+                                      ),
+                                    ),
+
+                                  ],
+                                ),
+                              ),
+
+                              Container(
+                                width: 110,
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+
+                                    Text(
+                                      'FOLLOWING',
+                                      style: TextStyle(
+                                        color: Colors.white70,
+                                        fontSize: 12
+                                      ),
+                                    ),
+
+                                    SizedBox(height: 4.0),
+
+                                    Text(
+                                      '362',
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold
+                                      ),
+                                    ),
+
+                                  ],
+                                ),
+                              ),
+
+                              Container(
+                                width: 110,
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+
+                                    Text(
+                                      'FOLLOWERS',
+                                      style: TextStyle(
+                                        color: Colors.white70,
+                                        fontSize: 12
+                                      ),
+                                    ),
+
+                                    SizedBox(height: 4.0),
+
+                                    Text(
+                                      '100',
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold
+                                      ),
+                                    ),
+
+                                  ],
+                                ),
+                              ),
+
+                            ],
+                          ),
+                        )
+
+                      ],
+                    ),
                   ),
                 ),
 
@@ -224,19 +226,21 @@ class _ProfileState extends State<Profile> {
             ),
 
             Positioned(
-              top: 32.0,
+              top: 10.0,
               left: 16.0,
-              child: GestureDetector(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => Profile2())
-                  );
-                },
-                child: Icon(
-                  Icons.keyboard_arrow_left,
-                  color: Colors.white,
-                  size: 32,
+              child: SafeArea(
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Profile2())
+                    );
+                  },
+                  child: Icon(
+                    Icons.keyboard_arrow_left,
+                    color: Colors.white,
+                    size: 32,
+                  ),
                 ),
               ),
             )
